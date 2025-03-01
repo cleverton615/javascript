@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: blue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práticando DOM</h1>
+    <p>Primeiro <strong>resultado</strong></p>
+    <p>Segundo <strong>resultado</strong></p>
+    <div id="msg">Clique aqui</div>
+    <h2 class="bcs">Brincs</h2>
+    <script>
+         
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d1 = window.document.getElementById('msg')
+        d1.innerText = 'Testando...'
+        var b1 = window.document.querySelector('p')
+        b1.style.background = 'green'
+    </script>
+</body>
+</html>

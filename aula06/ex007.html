@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 24pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var aluno = window.prompt("Diga seu nome ")
+        var nota1 = Number(window.prompt("Diga sua primeira nota "))
+        var nota2 = Number(window.prompt("Diga sua segunda nota "))
+        var nota3 = Number(window.prompt("Diga sua terceira norta "))
+        var media = (nota1 + nota2 + nota3) / 3
+        if (media >= 5){
+            var final = "Aprovado"
+        } else {
+            var final = "Reprovado"
+        }
+        
+        document.write(`A média de ${aluno} é ${media}, então ele está ${final}!`)
+    </script>
+</body>
+</html>

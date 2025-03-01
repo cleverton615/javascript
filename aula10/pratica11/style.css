@@ -1,0 +1,56 @@
+/*Ajuste manual com seletor de tema dark/light */    
+:root {
+    --preto-87: rgba(0, 0, 0, 0.87);
+  }
+  
+  html {
+    color-scheme: light;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --preto-87: rgba(255, 255, 255, 0.87);
+    }
+  
+    html {
+      color-scheme: dark;
+    }
+  }
+  
+  [modo-light-dark="light"] {
+    color-scheme: light;
+    --preto-87: rgba(0, 0, 0, 0.87);
+  }
+  
+  [modo-light-dark="dark"] {
+    color-scheme: dark;
+    --preto-87: rgba(255, 255, 255, 0.87);
+  }
+
+/* Seleção de tema light/dark automático
+:root {
+--preto-87: rgba(0, 0, 0, 0.87);
+}
+
+html {
+color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --preto-87: rgba(255, 255, 255, 0.87);
+}
+
+html {
+    color-scheme: dark;
+}
+} */
+
+body {
+    font: normal 18pt Arial;
+}
+
+#meuBotao {
+    width: 100px;
+    height: 100px;
+}    

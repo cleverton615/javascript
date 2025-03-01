@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando DOM</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="t1">Título 1</h1>
+        <div class="d1">
+            Divisão 1
+        </div>
+
+    <h2 id="t2">Título 2</h2>    
+        <div class="d2">
+            Divisão 2
+        </div>
+
+    <h3 id="t3">Título 3</h3>    
+        <div class="d3">
+            Divisão 3
+        </div><br>
+
+        <script>
+            var titulo1 = document.querySelector("#t1")
+            titulo1.textContent = 'DOM'
+
+            var divisao1 = document.querySelector(".d1")
+            divisao1.textContent = 'DOM 2'
+
+            var titulo2 = document.querySelector('#t2')
+            titulo2.textContent = 'OUTRO TESTE'
+
+            var divisao2 = document.querySelector('.d2')
+            divisao2.textContent = 'Praticando...'
+
+            var titulo3 = document.querySelector('#t3')
+            titulo3.textContent = 'Mais uma pratica'
+
+            var divisao3 = document.querySelector('.d3')
+            divisao3.textContent = 'E acabou as práticas...'
+
+            var n1 = Number(window.prompt('Digite o primeiro número'))
+            var n2 = Number(window.prompt('Digite o segundo número'))
+            s = n1 + n2
+            window.alert(`A SOMA ENTRE ${n1} e ${n2} é ${s}`)
+
+            document.write(`O resultado do alert é ${s}`)
+        </script>
+</body>
+</html>
