@@ -13,7 +13,7 @@
 
     <script>
         function calcular() {
-            var txtp = document.getElementById('txtpais')
+            var txtp = document.getElementById('txtpais').value
             var res = document.querySelector('div#res')
             res.innerHTML = `<p>Seu pais é <strong>${txtp}</strong></p>`
             if (txtp == 'Brasil'){
