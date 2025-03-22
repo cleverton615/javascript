@@ -1,0 +1,67 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+body {
+    font: normal 12pt Arial;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+p#alg {
+    font-size: 20px;
+}
+
+section {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 255, 0.45);
+    margin-left: 45%;
+}
+
+input {
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
